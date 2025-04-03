@@ -6,7 +6,13 @@ const initialState = {
   total: 0,
   quantity: 0,
   darkMode: false,
-  products: paginationItems,  // Add this line
+  products: paginationItems,
+  theme: {
+    background: '#ffffff',
+    text: '#262626',
+    darkBackground: '#1a1a1a',
+    darkText: '#ffffff'
+  }
 };
 
 const bazarioSlice = createSlice({
@@ -48,6 +54,8 @@ const bazarioSlice = createSlice({
     },
     toggleDarkMode: (state) => {
       state.darkMode = !state.darkMode;
+      state.theme.background = state.darkMode ? state.theme.darkBackground : '#ffffff';
+      state.theme.text = state.darkMode ? state.theme.darkText : '#262626';
     },
     resetCart: (state) => {
       state.cart = [];
