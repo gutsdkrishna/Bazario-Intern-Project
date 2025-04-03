@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 
 const ShopNow = () => {
-  const darkMode = useSelector((state) => state.orebiReducer.darkMode);
+  const darkMode = useSelector((state) => state.BazarioReducer.darkMode);
   return (
     <button className={`${
       darkMode ? 'bg-indianYellow text-darkBg' : 'bg-primeColor text-white'

@@ -13,8 +13,8 @@ const initialState = {
   },
 };
 
-export const orebiSlice = createSlice({
-  name: "orebi",
+export const BazarioSlice = createSlice({
+  name: "Bazario",
   initialState,
   reducers: {
     addToCart: (state, action) => {
@@ -83,5 +83,5 @@ export const {
   deleteItem,
   resetCart,
   toggleDarkMode,
-} = orebiSlice.actions;
-export default orebiSlice.reducer;
+} = BazarioSlice.actions;
+export default BazarioSlice.reducer;

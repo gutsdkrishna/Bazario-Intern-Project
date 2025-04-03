@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { toggleDarkMode } from "./redux/orebiSlice";
+import { toggleDarkMode } from "./redux/BazarioSlice";
 import Footer from "./components/home/Footer/Footer";
 import FooterBottom from "./components/home/Footer/FooterBottom";
 import Header from "./components/home/Header/Header";
@@ -28,8 +28,8 @@ import Shop from "./pages/Shop/Shop";
 
 const Layout = () => {
   const dispatch = useDispatch();
-  const darkMode = useSelector((state) => state.orebiReducer.darkMode);
-  const theme = useSelector((state) => state.orebiReducer.theme);
+  const darkMode = useSelector((state) => state.BazarioReducer.darkMode);
+  const theme = useSelector((state) => state.BazarioReducer.theme);
 
   useEffect(() => {
     // Check for saved dark mode preference

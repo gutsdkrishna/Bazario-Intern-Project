@@ -8,8 +8,8 @@ import { useSelector } from "react-redux";
 import { paginationItems } from "../../../constants";
 
 const HeaderBottom = () => {
-  const products = useSelector((state) => state.orebiReducer.products);
-  const darkMode = useSelector((state) => state.orebiReducer.darkMode);
+  const products = useSelector((state) => state.BazarioReducer.products);
+  const darkMode = useSelector((state) => state.BazarioReducer.darkMode);
   const [show, setShow] = useState(false);
   const [showUser, setShowUser] = useState(false);
   const navigate = useNavigate();
@@ -27,7 +27,6 @@ const HeaderBottom = () => {
 
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredProducts, setFilteredProducts] = useState([]);
-  const [showSearchBar, setShowSearchBar] = useState(false);
 
   const handleSearch = (e) => {
     setSearchQuery(e.target.value);
@@ -150,7 +149,6 @@ const HeaderBottom = () => {
                             },
                           }
                         ) &
-                        setShowSearchBar(true) &
                         setSearchQuery("")
                       }
                       key={item._id}

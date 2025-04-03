@@ -5,8 +5,8 @@ import { MdSwitchAccount } from "react-icons/md";
 import { useSelector } from "react-redux";
 
 const SpecialCase = () => {
-  const products = useSelector((state) => state.orebiReducer.products);
-  const darkMode = useSelector((state) => state.orebiReducer.darkMode);
+  const products = useSelector((state) => state.BazarioReducer.products);
+  const darkMode = useSelector((state) => state.BazarioReducer.darkMode);
   return (
     <div className="fixed top-52 right-2 z-20 hidden md:flex flex-col gap-2">
       <Link to="/signin">

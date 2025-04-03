@@ -9,7 +9,7 @@ import Image from "../../designLayouts/Image";
 import { useSelector } from "react-redux";
 
 const Sale = () => {
-  const darkMode = useSelector((state) => state.orebiReducer.darkMode);
+  const darkMode = useSelector((state) => state.BazarioReducer.darkMode);
   return (
     <div className={`py-20 flex flex-col md:flex-row items-center justify-between gap-4 lg:gap-10 ${
       darkMode ? 'bg-darkBg' : 'bg-white'

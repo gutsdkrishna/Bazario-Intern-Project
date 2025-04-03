@@ -7,7 +7,7 @@ import Image from "../../designLayouts/Image";
 import { useSelector } from "react-redux";
 
 const Footer = () => {
-  const darkMode = useSelector((state) => state.orebiReducer.darkMode);
+  const darkMode = useSelector((state) => state.BazarioReducer.darkMode);
   const [emailInfo, setEmailInfo] = useState("");
   const [subscription, setSubscription] = useState(false);
   const [errMsg, setErrMsg] = useState("");

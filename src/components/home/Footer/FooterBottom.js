@@ -3,7 +3,7 @@ import { AiOutlineCopyright } from "react-icons/ai";
 import { useSelector } from "react-redux";
 
 const FooterBottom = () => {
-  const darkMode = useSelector((state) => state.orebiReducer.darkMode);
+  const darkMode = useSelector((state) => state.BazarioReducer.darkMode);
 
   return (
     <div className={`w-full group ${

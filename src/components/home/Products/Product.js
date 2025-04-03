@@ -7,11 +7,11 @@ import Image from "../../designLayouts/Image";
 import Badge from "./Badge";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { addToCart } from "../../../redux/orebiSlice";
+import { addToCart } from "../../../redux/BazarioSlice";
 
 const Product = (props) => {
   const dispatch = useDispatch();
-  const darkMode = useSelector((state) => state.orebiReducer.darkMode);
+  const darkMode = useSelector((state) => state.BazarioReducer.darkMode);
   const _id = props.productName;
   const idString = (_id) => {
     return String(_id).toLowerCase().split(" ").join("");

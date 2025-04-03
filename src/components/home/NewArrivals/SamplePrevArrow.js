@@ -3,7 +3,7 @@ import { FaLongArrowAltLeft } from "react-icons/fa";
 import { useSelector } from "react-redux";
 
 const SamplePrevArrow = (props) => {
-  const darkMode = useSelector((state) => state.orebiReducer.darkMode);
+  const darkMode = useSelector((state) => state.BazarioReducer.darkMode);
   const { onClick } = props;
   return (
     <div
