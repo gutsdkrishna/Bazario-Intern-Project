@@ -16,7 +16,7 @@ const About = () => {
           <span className="text-primeColor font-semibold text-lg">Bazario</span>{" "}
           is one of the world's leading ecommerce brands and is internationally
           recognized for celebrating the essence of classic Worldwide cool
-          looking style.
+          looking style .
         </h1>
         <Link to="/shop">
           <button className="w-52 h-10 bg-primeColor text-white hover:bg-black duration-300">
