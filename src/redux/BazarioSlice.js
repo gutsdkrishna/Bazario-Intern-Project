@@ -1,10 +1,12 @@
 import { createSlice } from '@reduxjs/toolkit';
+import { paginationItems } from '../constants';
 
 const initialState = {
   cart: [],
   total: 0,
   quantity: 0,
   darkMode: false,
+  products: paginationItems,  // Add this line
 };
 
 const bazarioSlice = createSlice({
